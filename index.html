@@ -22,9 +22,31 @@
     <header class="fixed-top">
         <div class="container-fluid d-flex py-4 justify-content-between align-items-center">
             <div class="d-flex ">
-                <div class="burger"></div>
-                <div class="logo"><img src="access/img/logo.png" alt="logo"></div>
-                <div class="menu">
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
+
+                    <ul class="menu__box p-3">
+
+                        <li class="d-lg-none menu__item"><a href="">Коляски</a></li>
+                        <li class="d-lg-none menu__item"><a href="">Аксессуары</a></li>
+                        <li class="d-lg-none menu__item"><a href="">Истории</a></li>
+                        <li class="d-lg-none menu__item"><a href="">Где купить?</a></li>
+
+                        <li><a class="menu__item" href="#">О НАС</a></li>
+                        <li><a class="menu__item" href="#">ОБСЛУЖИВАНИЕ КЛИЕНТОВ</a></li>
+                        <li><a class="menu__item" href="#">КОНТАКТЫ</a></li>
+                        <li><a class="menu__item" href="#">PRIVACY POLICY</a></li>
+                    </ul>
+                </div>
+                <div class="logo ml-5">
+                    <a href="">
+                        <img src="access/img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="menu d-none d-lg-block">
                     <ul>
                         <li><a href="#">Коляски</a></li>
                         <li><a href="#">Аксессуары</a></li>
@@ -50,6 +72,7 @@
         <div class="p-absolute d-flex align-items-center mx-3">
             <div class="col-lg-8 col-12">
                 <h1 class="display-1">New Collection Cristiano</h1>
+                <button class="bt-1 p-2 px-4 mt-5"><a href="">Смотреть всe</a></button>
             </div>
             <div class="col-lg-4 col-12 d-none d-lg-inline">
                 <img src="access/img/slid-01.png" alt="slid-01" class="w-100">
