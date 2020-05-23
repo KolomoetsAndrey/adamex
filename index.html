@@ -72,9 +72,9 @@
         <div class="p-absolute d-flex align-items-center mx-3">
             <div class="col-lg-8 col-12">
                 <h1 class="display-1">New Collection Cristiano</h1>
-                <button class="bt-1 p-2 px-4 mt-5"><a href="">Смотреть всe</a></button>
+                <button class="bt-1 p-2 px-4 mt-5 mt-xs-2"><a href="">Смотреть всe</a></button>
             </div>
-            <div class="col-lg-4 col-12 d-none d-lg-inline">
+            <div class="col-lg-4 col-12 d-none d-md-inline">
                 <img src="access/img/slid-01.png" alt="slid-01" class="w-100">
             </div>
         </div>
@@ -139,15 +139,15 @@
         <h2 class="my-4 py-4">Покупай оригинальные коляски только<br> у наших официальных представителей</h2>
         <div class="row">
 
-            <div class="col-lg-6">
+            <div class="col-md-6">
                 <form action="">
-                    <div class="d-flex">
+                    <div class="d-block d-sm-flex">
                         <input type="text" placeholder="Введите свой город">
-                        <button type="submit" class="btn-2 ml-3 p-2 px-4">найти</button>
+                        <button type="submit" class="btn-2 ml-sm-3 p-2 px-4">найти</button>
                     </div>
                 </form>
             </div>
-            <div class="col-lg-6 text-right">
+            <div class="col-md-6 text-md-right">
                 <button class="btn-2 p-2 px-4">Стань дилером →</button>
             </div>
 
@@ -158,17 +158,17 @@
     </div>
     <div class="partners py-3 px-3 mb-5">
         <h2 class="my-4 py-4">Наши коляски проверены<br> и сертифицированы в cоответствии <br>с европейскими стандартами</h2>
-        <div class="col-lg-7">
+        <div class="col-lg-7 p-0">
             <p>Мы получили несколько наград, потому что прилагаем все усилия, чтобы наши коляски соответствовали всем требованиям безопасности, стабильности и долговечности.</p>
         </div>
-        <div class="d-flex mt-5">
-            <img src="access/img/brand/01.png" alt="">
-            <img src="access/img/brand/02.png" alt="">
-            <img src="access/img/brand/03.png" alt="">
-            <img src="access/img/brand/04.png" alt="">
-            <img src="access/img/brand/05.png" alt="">
-            <img src="access/img/brand/06.png" alt="">
-            <img src="access/img/brand/07.png" alt="">
+        <div class="d-flex mt-5 flex-wrap">
+            <img class="mb-3" src="access/img/brand/01.png" alt="">
+            <img class="mb-3" src="access/img/brand/02.png" alt="">
+            <img class="mb-3" src="access/img/brand/03.png" alt="">
+            <img class="mb-3" src="access/img/brand/04.png" alt="">
+            <img class="mb-3" src="access/img/brand/05.png" alt="">
+            <img class="mb-3" src="access/img/brand/06.png" alt="">
+            <img class="mb-3" src="access/img/brand/07.png" alt="">
         </div>
     </div>
     <div class="present ">
@@ -180,14 +180,14 @@
     </div>
     <div class="instagram">
         <div class="row m-0">
-            <div class="p-absolute">
+            <div class="p-absolute order-2 =">
                 <img src="access/img/phone.png" alt="phone">
             </div>
-            <div class="col-lg-6 d-flex flex-column justify-content-center">
+            <div class="col-md-6 d-flex flex-column justify-content-center order-1">
                 <h2>instagram <a href="">@adamex</a><br>Стильная презентация<br> последних релизов</h2>
                 <button class="btn-2 p-2 px-4 mt-5"><a href="">следуйте за нами</a></button>
             </div>
-            <div class="col-lg-6 p-0">
+            <div class="col-md-6 p-0 order-3">
                 <img class="w-100" src="access/img/pic-05.png" alt="pic-05">
             </div>
         </div>
@@ -217,7 +217,7 @@
                     <li><a href="">Где купить?</a></li>
                 </ul>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 pl-0">
                 <ul class="p-0">
                     <li><a href="">О НАС</a></li>
                     <li><a href="">ОБСЛУЖИВАНИЕ КЛИЕНТОВ</a></li>
@@ -225,7 +225,7 @@
                     <li><a href="">КОНТАКТЫ</a></li>
                 </ul>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 pl-0">
                 <ul class="p-0">
                     <li><a href="">Facebook</a></li>
                     <li><a href="">Instagram</a></li>
@@ -262,7 +262,35 @@
             arrows: false,
             slidesToShow: 4,
             autoplay: true,
-            autoplaySpeed: 3000
+            autoplaySpeed: 3000,
+            responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
         });
 
     </script>
