@@ -5,6 +5,9 @@ body {
 * {
   outline: none !important;
 }
+.menu {
+  margin-top: 2px;
+}
 .red {
   background: #f7f4fa;
   /* Old browsers */
@@ -17,8 +20,12 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7f4fa', endColorstr='#ebe6f1', GradientType=0);
   /* IE6-9 */
 }
-.logo:hover {
-  opacity: 0.3;
+.lang {
+  margin-top: 10px;
+  margin-bottom: -5px;
+}
+.icon-Flag_of_Ukraine2 {
+  font-size: 14px;
 }
 .display-1 {
   font-size: 80px;
@@ -26,12 +33,30 @@ body {
 }
 a {
   color: #111111;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  padding-bottom: 3px;
 }
 a:hover {
   color: #111111;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+.logo {
+  font-size: 20px;
+  margin-top: px;
+}
+.logo:hover {
+  opacity: 0.6;
+  text-decoration: none !important;
+  border-bottom: 0px solid rgba(0, 0, 0, 0);
+}
+.logo:hover a {
+  text-decoration: none !important;
+  border-bottom: 0px solid rgba(0, 0, 0, 0);
 }
 p {
   font-size: 20px;
+  line-height: 1.2;
 }
 input {
   border: none;
@@ -43,7 +68,7 @@ input {
 }
 .btn-2 {
   color: #111;
-  border: 1px solid #111;
+  border: 2px solid #111;
   text-transform: uppercase;
   background: #fff;
 }
@@ -51,9 +76,12 @@ input {
   background: #111;
   color: #fff;
 }
+.btn-2:hover a {
+  border: none;
+}
 .bt-1 {
   color: #fff;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   text-transform: uppercase;
   background: rgba(51, 51, 51, 0);
 }
@@ -64,6 +92,7 @@ input {
 .bt-1:hover a {
   color: #111 !important;
   text-decoration: none;
+  border: none;
 }
 .bt-1 a {
   color: #fff !important;
@@ -93,12 +122,14 @@ input {
 }
 h2 {
   font-size: 40px;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: uppercase;
+  line-height: 1.2;
 }
 h4 {
   font-size: 23px;
-  font-weight: 300;
+  font-weight: 400;
+  line-height: 1.2;
 }
 .slick-slider .slick-track,
 .slick-slider .slick-list {
@@ -118,6 +149,12 @@ header .menu ul li {
 }
 .baby-stroller .slider img {
   align-self: center;
+}
+.baby-stroller a {
+  border: none;
+}
+.baby-stroller a:hover {
+  border: none;
 }
 .present {
   margin-bottom: 2px;
@@ -202,7 +239,7 @@ footer ul li a {
   display: flex;
   align-items: center;
   position: fixed;
-  top: 31px;
+  top: 32px;
   left: 20px;
   width: 26px;
   height: 26px;
@@ -242,7 +279,6 @@ footer ul li a {
   transition-duration: 0.25s;
 }
 .menu__item {
-  display: block;
   color: #111;
   text-decoration: none;
   line-height: 40px;
@@ -254,7 +290,7 @@ footer ul li a {
 }
 .menu__item a:hover {
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 400;
 }
 @media (max-width: 1200px) {
   h2 {
@@ -307,6 +343,10 @@ footer ul li a {
   }
 }
 @media (min-width: 320px) and (max-width: 576px) {
+  .logo {
+    font-size: 12px;
+    padding-top: 3px;
+  }
   .logo img {
     max-width: 130px;
   }
