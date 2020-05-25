@@ -74,15 +74,19 @@
 	</header>
 
 	<div class="main-screen d-flex align-items-center">
-		<div class="p-absolute d-flex align-items-center mx-3 justify-content-between col-md-12 col-lg-11">
-			<div class="col-lg-8 col-12">
+		<div class="sector p-absolute d-flex align-items-center mx-3 justify-content-between col-md-12 col-lg-11">
+
+			<div class="col-lg-8 col-12 scroll">
 				<h1 class="display-1">New Collection<br> Cristiano</h1>
 				<button class="bt-1 p-2 px-4 mt-5 mt-xs-2"><a href="">Смотреть всe</a></button>
 			</div>
-			<div class="col-lg-4 col-12 d-none d-md-block text-right">
+			<div class="col-lg-4 col-12 d-none d-md-block text-right scroll">
 				<img src="access/img/slid-01.png" alt="slid-01" class="w-100">
 			</div>
+
 		</div>
+
+
 		<img class="w-100" src="access/img/pic-01.png" alt="pic-01">
 
 	</div>
@@ -137,6 +141,25 @@
 			<button class="bt-1 mt-5 p-2 px-4"><a href="">Все о нас</a></button>
 		</div>
 		<img src="access/img/pic-02.png" alt="pic-02" class="w-100">
+	</div>
+	<div class="accessories pb-1 pt-3">
+		<h2 class="my-4 py-4 px-3">Аксессуары для дополнительного<br>
+			комфорта и уюта детей, родителей</h2>
+		<div class="row m-0 px-3 mb-5">
+			<div class="col-lg-3 red d-flex flex-column justify-content-between">
+				<a href=""><img src="access/img/accessory/01.png" alt="01" class="w-100"></a>
+				<h4 class="mb-4"><a href="">Barcelona</a></h4>
+			</div>
+			<div class="col-lg-3 red d-flex flex-column justify-content-between">
+				<a href=""><img src="access/img/accessory/02.png" alt="02" class="w-100"></a>
+				<h4 class="mb-4"><a href="">Barcelona</a></h4>
+			</div>
+			<div class="col-lg-6 red d-flex flex-column justify-content-between">
+				<a href=""><img src="access/img/accessory/03.png" alt="03" class="w-100"></a>
+				<h4 class="mb-4"><a href="">Barcelona</a></h4>
+			</div>
+			<button class="btn-2 p-2 px-4 mt-5">Смотреть все аксессуары</button>
+		</div>
 	</div>
 	<div class="present">
 		<div class="p-absolute col-lg-7 mt-5 pt-5">
@@ -263,8 +286,8 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script type="text/javascript" src="access/js/jquery.jInvertScroll.js"></script>
 
-	<script src="access/js/main.js"></script>
 	<script>
 		$('.slider').slick({
 			centerMode: true,
@@ -302,6 +325,18 @@
 				}
 			]
 		});
+
+	</script>
+	<script type="text/javascript">
+		(function($) {
+			$.jInvertScroll(['.scroll'], // an array containing the selector(s) for the elements you want to animate
+				{
+					height: 6000, // optional: define the height the user can scroll, otherwise the overall length will be taken as scrollable height
+					onScroll: function(percent) { //optional: callback function that will be called when the user scrolls down, useful for animating other things on the page
+						console.log(percent);
+					}
+				});
+		}(jQuery));
 
 	</script>
 </body>
