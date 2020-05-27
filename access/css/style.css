@@ -1,5 +1,8 @@
 body {
   font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
 }
 * {
   outline: none !important;
@@ -96,6 +99,16 @@ input {
 }
 .bt-1 a {
   color: #fff !important;
+}
+.block-title {
+  text-transform: uppercase;
+  font-size: 40px;
+  color: #000000;
+  line-height: 49px;
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 140px;
+  padding: 0 15px;
 }
 .dropdown-menu {
   border: none;
