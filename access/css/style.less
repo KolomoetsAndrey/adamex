@@ -1,4 +1,4 @@
-body {
+body, html {
 	font-family: 'Montserrat', sans-serif;
 	scroll-behavior: smooth;
 	-webkit-font-smoothing: antialiased;
@@ -133,6 +133,263 @@ input {
 	font-weight: normal;
 	margin-top: 140px;
 	padding: 0 15px;
+}
+
+.contacts {
+	display: flex;
+	flex-wrap: wrap;
+
+	.left-nav {
+		ul {
+			list-style: none;
+			padding: 0;
+			margin-top: 40px;
+		}
+
+		.left-nav-link {
+			color: rgba(17, 17, 17, 0.6);;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 20px;
+			line-height: 40px;
+			text-transform: uppercase;
+
+			&:hover {
+				color: #000000;
+			}
+		}
+
+		.active {
+			color: #000000;
+
+			&:hover {
+				border: none;
+			}
+		}
+	}
+
+	.right-info {
+		margin-top: 40px;
+
+		.info-block {
+			h3 {
+				font-style: normal;
+				font-weight: normal;
+				font-size: 30px;
+				line-height: 37px;
+				text-transform: uppercase;
+				margin-bottom: 30px;
+			}
+
+			.blocks {
+				display: flex;
+				flex-wrap: wrap;
+
+				.service-block, .brand-block,
+				.dealers-block, .distributors-block {
+					width: 50%;
+					font-size: 20px;
+					line-height: 25px;
+
+					p {
+						padding: 0;
+						margin: 0;
+					}
+				}
+			}
+
+			.brand-block {
+				margin-bottom: 80px;
+
+				.country {
+					text-transform: uppercase;
+
+					&::before {
+						position: relative;
+						display: inline-block;
+						content: "";
+						height: 23px;
+						width: 33px;
+						background: var(--flag);;
+						background-size: cover;
+					}
+				}
+
+				a {
+					color: #3e92c6;
+				}
+			}
+
+			.service-block {
+				margin-bottom: 80px;
+
+				.country {
+					text-transform: uppercase;
+				}
+
+				a {
+					color: #3e92c6;
+				}
+			}
+
+			.dealers-block {
+				margin-bottom: 80px;
+
+				.city {
+					text-transform: uppercase;
+				}
+
+				a {
+					color: #3e92c6;
+				}
+			}
+
+			.distributors-block {
+				margin-bottom: 80px;
+
+				.country {
+					text-transform: uppercase;
+
+					&::before {
+						position: relative;
+						display: inline-block;
+						content: "";
+						height: 23px;
+						width: 33px;
+						background: var(--flag);;
+						background-size: cover;
+					}
+				}
+
+				a {
+					color: #3e92c6;
+				}
+			}
+
+			.block-description {
+				margin-bottom: 20px;
+			}
+
+			.partners-form {
+				background: #F7F4FA;
+				padding: 20px;
+
+				.form-blocks {
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: space-between;
+
+					input {
+						width: 48%;
+						background: #F7F4FA;
+						margin-bottom: 25px;
+						font-size: 20px;
+						padding: 10px 15px;
+					}
+
+					input[type="file"] {
+						display: none;
+					}
+
+					.custom-file-upload {
+						display: inline-block;
+						padding: 6px 12px;
+						cursor: pointer;
+						width: 48%;
+						font-size: 20px;
+
+						span {
+							border-bottom: 1px solid rgba(0, 0, 0, 0.4);;
+						}
+					}
+
+					.vector {
+						width: 25px;
+						height: 25px;
+						margin-right: 10px;
+					}
+
+					.custom-control {
+						width: 100%;
+						font-size: 20px;
+					}
+				}
+			}
+
+			.send-mail {
+				margin-top: 80px;
+			}
+
+			.mail-form {
+				background: #F7F4FA;
+				padding: 20px;
+				margin-bottom: 50px;
+
+				.form-blocks {
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: space-between;
+
+					input {
+						width: 48%;
+						background: #F7F4FA;
+						margin-bottom: 25px;
+						font-size: 20px;
+						padding: 10px 15px;
+					}
+
+					textarea {
+						width: 100%;
+						margin-bottom: 15px;
+						border: none;
+						border-bottom: 1px solid #000000;
+						background: #F7F4FA;
+						font-size: 20px;
+						padding: 10px 15px;
+					}
+
+					input[type="file"] {
+						display: none;
+					}
+
+					.custom-file-upload {
+						display: inline-block;
+						padding: 6px 12px;
+						cursor: pointer;
+						width: 48%;
+						font-size: 20px;
+
+						span {
+							border-bottom: 1px solid rgba(0, 0, 0, 0.4);;
+						}
+					}
+
+					.vector {
+						width: 25px;
+						height: 25px;
+						margin-right: 10px;
+					}
+
+					.custom-control {
+						width: 100%;
+						font-size: 20px;
+					}
+				}
+			}
+
+			.custom-control-input:checked ~ .custom-control-label::before {
+				color: #000;
+				border-color: #000000;
+				background-color: #000000;
+			}
+
+			.custom-control-input:not(:disabled):active ~ .custom-control-label::before {
+				color: #fff;
+				background-color: #f7f4fa;
+				border-color: #f7f4fa;
+			}
+		}
+	}
 }
 
 .dropdown-menu {

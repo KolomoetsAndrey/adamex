@@ -1,4 +1,5 @@
-body {
+body,
+html {
   font-family: 'Montserrat', sans-serif;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
@@ -109,6 +110,218 @@ input {
   font-weight: normal;
   margin-top: 140px;
   padding: 0 15px;
+}
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contacts .left-nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 40px;
+}
+.contacts .left-nav .left-nav-link {
+  color: rgba(17, 17, 17, 0.6);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+.contacts .left-nav .left-nav-link:hover {
+  color: #000000;
+}
+.contacts .left-nav .active {
+  color: #000000;
+}
+.contacts .left-nav .active:hover {
+  border: none;
+}
+.contacts .right-info {
+  margin-top: 40px;
+}
+.contacts .right-info .info-block h3 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 37px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.contacts .right-info .info-block .blocks {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contacts .right-info .info-block .blocks .service-block,
+.contacts .right-info .info-block .blocks .brand-block,
+.contacts .right-info .info-block .blocks .dealers-block,
+.contacts .right-info .info-block .blocks .distributors-block {
+  width: 50%;
+  font-size: 20px;
+  line-height: 25px;
+}
+.contacts .right-info .info-block .blocks .service-block p,
+.contacts .right-info .info-block .blocks .brand-block p,
+.contacts .right-info .info-block .blocks .dealers-block p,
+.contacts .right-info .info-block .blocks .distributors-block p {
+  padding: 0;
+  margin: 0;
+}
+.contacts .right-info .info-block .brand-block {
+  margin-bottom: 80px;
+}
+.contacts .right-info .info-block .brand-block .country {
+  text-transform: uppercase;
+}
+.contacts .right-info .info-block .brand-block .country::before {
+  position: relative;
+  display: inline-block;
+  content: "";
+  height: 23px;
+  width: 33px;
+  background: var(--flag);
+  background-size: cover;
+}
+.contacts .right-info .info-block .brand-block a {
+  color: #3e92c6;
+}
+.contacts .right-info .info-block .service-block {
+  margin-bottom: 80px;
+}
+.contacts .right-info .info-block .service-block .country {
+  text-transform: uppercase;
+}
+.contacts .right-info .info-block .service-block a {
+  color: #3e92c6;
+}
+.contacts .right-info .info-block .dealers-block {
+  margin-bottom: 80px;
+}
+.contacts .right-info .info-block .dealers-block .city {
+  text-transform: uppercase;
+}
+.contacts .right-info .info-block .dealers-block a {
+  color: #3e92c6;
+}
+.contacts .right-info .info-block .distributors-block {
+  margin-bottom: 80px;
+}
+.contacts .right-info .info-block .distributors-block .country {
+  text-transform: uppercase;
+}
+.contacts .right-info .info-block .distributors-block .country::before {
+  position: relative;
+  display: inline-block;
+  content: "";
+  height: 23px;
+  width: 33px;
+  background: var(--flag);
+  background-size: cover;
+}
+.contacts .right-info .info-block .distributors-block a {
+  color: #3e92c6;
+}
+.contacts .right-info .info-block .block-description {
+  margin-bottom: 20px;
+}
+.contacts .right-info .info-block .partners-form {
+  background: #F7F4FA;
+  padding: 20px;
+}
+.contacts .right-info .info-block .partners-form .form-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contacts .right-info .info-block .partners-form .form-blocks input {
+  width: 48%;
+  background: #F7F4FA;
+  margin-bottom: 25px;
+  font-size: 20px;
+  padding: 10px 15px;
+}
+.contacts .right-info .info-block .partners-form .form-blocks input[type="file"] {
+  display: none;
+}
+.contacts .right-info .info-block .partners-form .form-blocks .custom-file-upload {
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  width: 48%;
+  font-size: 20px;
+}
+.contacts .right-info .info-block .partners-form .form-blocks .custom-file-upload span {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+.contacts .right-info .info-block .partners-form .form-blocks .vector {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+.contacts .right-info .info-block .partners-form .form-blocks .custom-control {
+  width: 100%;
+  font-size: 20px;
+}
+.contacts .right-info .info-block .send-mail {
+  margin-top: 80px;
+}
+.contacts .right-info .info-block .mail-form {
+  background: #F7F4FA;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+.contacts .right-info .info-block .mail-form .form-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contacts .right-info .info-block .mail-form .form-blocks input {
+  width: 48%;
+  background: #F7F4FA;
+  margin-bottom: 25px;
+  font-size: 20px;
+  padding: 10px 15px;
+}
+.contacts .right-info .info-block .mail-form .form-blocks textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  border: none;
+  border-bottom: 1px solid #000000;
+  background: #F7F4FA;
+  font-size: 20px;
+  padding: 10px 15px;
+}
+.contacts .right-info .info-block .mail-form .form-blocks input[type="file"] {
+  display: none;
+}
+.contacts .right-info .info-block .mail-form .form-blocks .custom-file-upload {
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  width: 48%;
+  font-size: 20px;
+}
+.contacts .right-info .info-block .mail-form .form-blocks .custom-file-upload span {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+.contacts .right-info .info-block .mail-form .form-blocks .vector {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+.contacts .right-info .info-block .mail-form .form-blocks .custom-control {
+  width: 100%;
+  font-size: 20px;
+}
+.contacts .right-info .info-block .custom-control-input:checked ~ .custom-control-label::before {
+  color: #000;
+  border-color: #000000;
+  background-color: #000000;
+}
+.contacts .right-info .info-block .custom-control-input:not(:disabled):active ~ .custom-control-label::before {
+  color: #fff;
+  background-color: #f7f4fa;
+  border-color: #f7f4fa;
 }
 .dropdown-menu {
   border: none;
